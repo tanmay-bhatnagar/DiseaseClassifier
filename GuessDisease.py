@@ -29,4 +29,4 @@ with open("Dataset.csv", "r") as file: #OPENS DATASET
        diseaseclassifier.train(lines[1],  lines[0]) #TRAINING
 diseaseclassifier = Classifier(diseaseclassifier.data, tokenizer)
 classification = diseaseclassifier.classify(sys.argv[1]) #CLASIFY INPUT
-print classification[0] #PRINT CLASIFICATION
+print (classification[0]) #PRINT CLASIFICATION
